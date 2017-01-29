@@ -1,11 +1,12 @@
 #include <iostream>
-#include "../include/utiles.hpp"
+#include "include/Sudoku.h"
 
 using namespace std;
 
 int main(){
-	int grid[sudoku::size][sudoku::size] = {{0}};
-	sudoku::generateGrid(grid);
-	sudoku::drawGrid(grid);
+
+    Sudoku sudoku;
+	sudoku.generateGrid();
+	sudoku.drawGrid();
 	return 0;
 }
